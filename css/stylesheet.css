@@ -1,0 +1,16 @@
+img {
+    max-width: 100%;
+}
+
+#artCarousel img {
+   max-height: 80vh;
+}
+
+.gallery-img {
+    cursor: pointer;
+}
+
+#modalImage {
+    object-fit: contain;
+    max-height: 80vh;
+}
