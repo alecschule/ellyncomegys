@@ -30,9 +30,9 @@ var art_gallery_info = [
         "price": "Sold"
     },
     {
-        "filename": "The Road Home.jpg",
-        "dimensions": "30x48",
-        "price": "$475"
+        "filename": "the healer.jpg",
+        "dimensions": "36x48",
+        "price": "Sold"
     },
     {
         "filename": "Unentanglement.jpg",
@@ -90,9 +90,24 @@ var art_gallery_info = [
         "price": "Sold"
     },
     {
-        "filename": "the healer.jpg",
-        "dimensions": "36x48",
-        "price": "Sold"
+        "filename": "The Road Home.jpg",
+        "dimensions": "30x48",
+        "price": "$475"
+    },
+    {
+        "filename": "the rugged way.jpg",
+        "dimensions": "30x40",
+        "price": "$250"
+    },
+    {
+        "filename": "trapped.jpg",
+        "dimensions": "30x40",
+        "price": "$275"
+    },
+    {
+        "filename": "transformation.jpg",
+        "dimensions": "24x30",
+        "price": "$250"
     },
     {
         "filename": "Evening Sky.jpg",
@@ -117,7 +132,7 @@ function populate_gallery() {
         $(row).addClass("row");
         for (var i = 0; i < 4; i++) { // each row should have 4 columns
             var col = document.createElement("div");
-            $(col).addClass("col-md-6 col-lg-4 col-xl-3 my-1");
+            $(col).addClass("col-md-6 col-lg-4 col-xl-3 my-1 gallery-column");
             var img = document.createElement("img");
             $(img).addClass("img-fluid gallery-img");
             $(img).attr("src", "art/" + art_gallery_info[array_index]["filename"]);

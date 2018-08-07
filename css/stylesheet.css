@@ -6,8 +6,14 @@ img {
    max-height: 80vh;
 }
 
+.gallery-column {
+    display: flex;
+    align-items: center;
+}
+
 .gallery-img {
     cursor: pointer;
+    vertical-align: middle;
 }
 
 #modalImage {
